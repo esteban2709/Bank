@@ -1,3 +1,4 @@
+'use strict';l
 class Stack {
 
 	constructor()
@@ -16,6 +17,14 @@ class Stack {
 			}
 			aux.setNextNode(new Node(info));
 			/*probando*/
+		}
+	}
+	print(){
+		var aux = head;
+		while (aux != null) {
+			console.log(aux);
+			aux = aux.getNextNode();
+
 		}
 	}
 }
