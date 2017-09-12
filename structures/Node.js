@@ -1,29 +1,28 @@
-function Node() {
-  var info ;
-  var nextNode = new Node();
+class Node {
+	constructor(info)
+	{
+		this.info = info;
+	}
+	constructor(info,nextNode)
+	{
+		this.info = info;
+		this.nextNode = nextNode;
+	}
 
-    function Node(var info) {
-      this.info = info;
-    }
 
-    function Node(var info,var nextNode) {
-      this.info= info;
-      this.nextNode = nextNode;
-    }
+	getInfo() {
+		return this.info;
+	}
 
-    this.getInfo = function () {
-      return this.info;
-    }
+	setInfo(info) {
+		this.info = info;
+	}
 
-    this.setInfo = function ( var info) {
-      this.info = info;
-    }
+	getNextNode() {
+		return this.nextNode;
+	}
 
-    this.getNextNode = function () {
-      return this.nextNode;
-    }
-
-    this.setNextNode = function (var nextNode) {
-      this.nextNode = nextNode
-    }
+	setNextNode ( nextNode) {
+		this.nextNode = nextNode
+	}
 }
