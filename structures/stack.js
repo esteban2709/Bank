@@ -15,6 +15,7 @@ class Stack {
 				aux = aux.getNextNode();
 			}
 			aux.setNextNode(new Node(info));
+			/*probando*/
 		}
 	}
 }
