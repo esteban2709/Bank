@@ -13,7 +13,7 @@ Queue.prototype.enqueue = function(data) {
 		this.tail.next = newNode;
 		this.tail = newNode;
 	}
-}
+};
 
 Queue.prototype.dequeue = function() {
 	var newNode;
@@ -22,7 +22,7 @@ Queue.prototype.dequeue = function() {
 		this.head = this.head.next;
 	}
 	return newNode;
-}
+};
 
 Queue.prototype.print = function() {
 	var curr = this.head;
@@ -30,7 +30,7 @@ Queue.prototype.print = function() {
 		console.log(curr.data);
 		curr = curr.next;
 	}
-	
+
 	var queue = new Queue();
     queue.enqueue(3);
     queue.enqueue(5);
@@ -39,4 +39,4 @@ Queue.prototype.print = function() {
     queue.dequeue();
     queue.dequeue();
     queue.print();
-}
+};

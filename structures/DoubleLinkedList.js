@@ -1,23 +1,24 @@
 /**
- * 
+ *
  */
+ 'use strict';
 class DoubleList {
 	constructor() {
 		this.head = null;
 	}
-	
+
 	getHead(){
 		return head;
 	}
-	
+
 	setHead(head){
 		this.head = head;
 	}
-	
+
 	isEmpty(){
 		return this.head == null;
 	}
-	
+
 	add(info){
 		if (this.head == null) {
 			head = new DoubleNode(info);
