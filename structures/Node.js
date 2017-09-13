@@ -1,15 +1,14 @@
-'use strict';
 class Node {
 	constructor(info)
 	{
 		this.info = info;
 	}
-	constructor(info,nextNode)
+/*	constructor(info,nextNode)
 	{
 		this.info = info;
 		this.nextNode = nextNode;
 	}
-
+*/
 
 	getInfo() {
 		return this.info;

@@ -1,6 +1,4 @@
-'use strict';l
 class Stack {
-
 	constructor()
 	{
 		this.head = null;
