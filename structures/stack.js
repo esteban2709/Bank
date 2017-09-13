@@ -22,4 +22,12 @@ class Stack {
 
 		}
 	}
+	
+	remove(){
+		if (head != null) {
+			var aux = head;
+			head = head.getNextNode();
+			return aux;
+		}
+	}
 }
