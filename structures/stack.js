@@ -10,11 +10,8 @@ class Stack {
 			this.head = new Node(info);
 		}else {
 			var  aux = head;
-			while (aux.getNextNode() != null) {
-				aux = aux.getNextNode();
-			}
-			aux.setNextNode(new Node(info));
-			/*probando*/
+			head = new Node(info);
+			head.setNext(aux);
 		}
 	}
 	print(){
